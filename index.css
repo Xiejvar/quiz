@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .letra{
     font-family: "Rye" , cursive;
 }
@@ -16,4 +21,3 @@
 .colorPrinc{
     background-color: gray;
 }
-
