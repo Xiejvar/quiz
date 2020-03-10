@@ -1,0 +1,19 @@
+.letra{
+    font-family: "Rye" , cursive;
+}
+
+.sombra{
+    align-items: center;
+    font-size: 48px;
+  text-shadow: 4px 4px 4px rgb(201, 116, 6);
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+
+.colorPrinc{
+    background-color: gray;
+}
+
