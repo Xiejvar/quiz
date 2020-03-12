@@ -1,6 +1,9 @@
-*{
+.espacio{
     margin: 0;
     padding: 0;
+}
+.esconder{
+    display: none;
 }
 
 .letra{
@@ -20,4 +23,10 @@
 
 .colorPrinc{
     background-color: gray;
+}
+
+@media only screen and (min-width: 768px ) {
+    .respuesta{
+        flex-wrap: wrap;
+    }
 }
