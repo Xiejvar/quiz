@@ -148,6 +148,27 @@ const pregunta5 = {
     ]
 }
 
+
+const imprimeTitulo = (titulo) => {
+    return `<p>${titulo}</p>`;
+}
+
+
+
+
+const imprimePregunta = (pregunta) => {
+    const {
+        titulo,
+        respuestas
+    } = pregunta;
+    const iterar = respuestas.map(imprimeRespuesta);
+    const juntar = iterar.join("");
+    const titulos = imprimeTitulo(titulo);
+    return titulos + juntar;
+}
+
+
+
 const imprimeRespuesta = (respuesta) => {
     const {
         id,
@@ -163,23 +184,11 @@ const imprimeRespuesta = (respuesta) => {
 }
 
 
-const botonazo = () => `<button>Enviar</button>`;
 
 
-const imprimeTitulo = (titulo) => {
-    return `<p>${titulo}</p>`;
-}
 
-const imprimePregunta = (pregunta) => {
-    const {
-        titulo,
-        respuestas
-    } = pregunta;
-    const iterar = respuestas.map(imprimeRespuesta);
-    const juntar = iterar.join("");
-    const titulos = imprimeTitulo(titulo);
-    return titulos + juntar;
-}
+
+
 const preguntas = [pregunta1, pregunta2, pregunta3, pregunta4, pregunta5];
 
 const preguntaImpresa = preguntas.map(imprimePregunta).join('')
@@ -195,6 +204,7 @@ const imprimeRespuestas = (event) => {
     console.log($form.elements.pre4.value)
     console.log($form.elements.pre5.value)
 }
+const botonazo = () => `<button>Enviar</button>`;
 
 const $form = document.getElementsByTagName('form')[0];
 const boton = botonazo();

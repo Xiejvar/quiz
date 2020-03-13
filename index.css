@@ -28,7 +28,10 @@
 }
 
 @media only screen and (min-width: 768px ) {
-    .respuesta{
-        flex-wrap: wrap;
+    *{
+        font-size: larger;
+    }
+    .sombra{
+        font-size: 90px;
     }
 }
