@@ -5,25 +5,29 @@ const pregunta1 = {
             label: "Glorfindel",
             id: "Glorfindel",
             name: "pre1",
-            value: "Glorfindel"
+            value: "Glorfindel",
+            correct: false
         },
         {
             label: "Aerendil",
             id: "Aerendil",
             name: "pre1",
-            value: "Aerendil"
+            value: "Aerendil",
+            correct: false
         },
         {
             label: "Mithrandir",
             id: "Mithrandir",
             name: "pre1",
-            value: "Mithrandir"
+            value: "Mithrandir",
+            correct: true
         },
         {
             label: "Maegir",
             id: "Maegir",
             name: "pre1",
-            value: "Maegir"
+            value: "Maegir",
+            correct: false
         }
     ]
 }
@@ -35,25 +39,29 @@ const pregunta2 = {
             label: "Raiden",
             id: "Raiden",
             name: "pre2",
-            value: "Raiden"
+            value: "Raiden",
+            correct: false
         },
         {
             label: "Sonia Blade",
             id: "SoniaBlade",
             name: "pre2",
-            value: "SoniaBlade"
+            value: "SoniaBlade",
+            correct: false
         },
         {
             label: "Liu-Kang",
             id: "LiuKang",
             name: "pre2",
-            value: "LiuKang"
+            value: "LiuKang",
+            correct: true
         },
         {
             label: "Johny Cage",
             id: "JohnyCage",
             name: "pre2",
-            value: "JohnyCage"
+            value: "JohnyCage",
+            correct: false
         }
     ]
 }
@@ -65,25 +73,29 @@ const pregunta3 = {
             label: "RE1",
             id: "RE1",
             name: "pre3",
-            value: "RE1"
+            value: "RE1",
+            correct: false
         },
         {
             label: "RE3",
             id: "RE3",
             name: "pre3",
-            value: "RE3"
+            value: "RE3",
+            correct: true
         },
         {
             label: "RE4",
             id: "RE4",
             name: "pre3",
-            value: "RE4"
+            value: "RE4",
+            correct: false
         },
         {
             label: "RE2",
             id: "RE2",
             name: "pre3",
-            value: "RE2"
+            value: "RE2",
+            correct: false
         }
     ]
 }
@@ -95,25 +107,29 @@ const pregunta4 = {
             label: "9 colas",
             id: "9colas",
             name: "pre4",
-            value: "9colas"
+            value: "9colas",
+            correct: true
         },
         {
             label: "4 colas",
             id: "4colas",
             name: "pre4",
-            value: "4colas"
+            value: "4colas",
+            correct: false
         },
         {
             label: "7 colas",
             id: "7colas",
             name: "pre4",
-            value: "7colas"
+            value: "7colas",
+            correct: false
         },
         {
             label: "3 colas",
             id: "3colas",
             name: "pre4",
-            value: "3colas"
+            value: "3colas",
+            correct: false
         }
     ]
 }
@@ -125,25 +141,29 @@ const pregunta5 = {
             label: "Saga de Cell",
             id: "SagaCell",
             name: "pre5",
-            value: "SagaCell"
+            value: "SagaCell",
+            correct: false
         },
         {
             label: "Saga de los sayan",
             id: "SagaSayan",
             name: "pre5",
-            value: "SagaSayan"
+            value: "SagaSayan",
+            correct: false
         },
         {
             label: "Saga de Freezer",
             id: "SagaFreezer",
             name: "pre5",
-            value: "SagaFreezer"
+            value: "SagaFreezer",
+            correct: false
         },
         {
             label: "Saga de Bu",
             id: "SagaBu",
             name: "pre5",
-            value: "SagaBu"
+            value: "SagaBu",
+            correct: true
         }
     ]
 }
@@ -198,11 +218,11 @@ const preguntaImpresa = preguntas.map(imprimePregunta).join('')
 const imprimeRespuestas = (event) => {
     event.preventDefault()
 
-    console.log($form.elements.pre1.value)
-    console.log($form.elements.pre2.value)
-    console.log($form.elements.pre3.value)
-    console.log($form.elements.pre4.value)
-    console.log($form.elements.pre5.value)
+    console.log($form.elements.pre1.value + $form.elements.pre1.correct)
+    console.log($form.elements.pre2.value + $form.elements.pre2.correct)
+    console.log($form.elements.pre3.value + $form.elements.pre3.correct)
+    console.log($form.elements.pre4.value + $form.elements.pre4.correct)
+    console.log($form.elements.pre5.value + $form.elements.pre5.correct)
 }
 const botonazo = () => `<button>Enviar</button>`;
 
